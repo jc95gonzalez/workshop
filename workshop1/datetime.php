@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
 <?php
-print strftime('%c');
+    $currentDateTime = date('Y-m-d H:i:s');
+    echo $currentDateTime;
 ?>
-</body>
-</html>
