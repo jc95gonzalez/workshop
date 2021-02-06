@@ -37,7 +37,6 @@ $result = mysqli_query($coon,'SELECT * FROM user');
             <tr>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
-            <th scope="col">Edit</th>
             <th scope="col">Delete</th>
             </tr>
             </thead>
@@ -46,8 +45,7 @@ $result = mysqli_query($coon,'SELECT * FROM user');
             <tr>
             <th><?php echo $row['fullname']; ?></th>
             <th><?php echo $row['fulldescription']; ?></th>
-            <th><a href="" class="btn btn-primary"></a>Edit</th>
-            <th><a href="" class="btn btn-primary"></a>Delete</th>
+            <th><a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"></a>Delete</th>
             </tr>
             <?php }?>
             </tbody>
