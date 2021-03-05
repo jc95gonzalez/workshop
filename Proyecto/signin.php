@@ -70,8 +70,9 @@ $rol = getRol();
             echo "<option value=\"$id\">$sex</option>";
           }
     ?>
-  </select><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref2" name="rol">
-    <label for="validationCustom06">Rol</label>
+  </select>
+  <select hidden class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref2" name="rol">
+    <label hidden for="validationCustom06">Rol</label>
     <?php
           foreach($rol as $id => $rol) {
             echo "<option value=\"$id\">$rol</option>";

@@ -5,7 +5,7 @@ function getSex() {
   }
 //Obtiene la función dropdown para el rol
   function getRol() {    
-    return ["admin" => 'Administrator', "user" => 'New User'];
+    return ["user" => 'New User', "admin" => 'Administrator'];
   }
 
 ?>
